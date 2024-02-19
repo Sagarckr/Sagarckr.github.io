@@ -30,7 +30,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px 15%;
+    padding: 5px 50px;
     background: #262626;
     transition: all ease .45s;
 }
@@ -83,7 +83,7 @@ header {
 }
 
 section {
-    padding: 0 15%;
+    padding: 50px 50px;
 }
 
 .home {
@@ -108,7 +108,7 @@ section {
 }
 
 .home-text span {
-    padding: 5px 25px;
+    padding: 10px 25px;
     background: linear-gradient(130.08deg, #383528 0%, #191919 100);
     box-shadow: 0px 20px 40px #00000070;
     border: 1px solid #3b3b3b;
@@ -120,7 +120,7 @@ section {
 }
 
 .home-text h1 {
-    font-size: var(--big-font);
+    font-size: 5rem;
     margin: 23px 0;
 }
 
@@ -164,17 +164,17 @@ section {
 }
 
 .share {
-    position: absolute;
+    padding-top: 50px;
     bottom: 3rem;
-    left: 15%;
     display: flex;
     align-items: center;
 }
 
 .share p {
+    text-align: center;
     font-size: 17px;
     color: var(--text-color);
-    margin-right: 25px;
+    margin: 0 7px;
 }
 
 .social i {
@@ -521,137 +521,6 @@ hr{
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-}
-
-@media(max-width: 1850px) {
-    header {
-        padding: 15px 8%;
-        transition: .2s;
-    }
-
-    section {
-        padding: 0 8%;
-        transition: .2s;
-    }
-
-    .share {
-        left: 8%;
-        transition: .2s;
-    }
-}
-
-@media(max-width: 1370px) {
-    header {
-        padding: 15px 4%;
-        transition: .2s;
-    }
-
-    section {
-        padding: 0 4%;
-        transition: .2s;
-    }
-
-    .share {
-        left: 4%;
-        transition: .2s;
-    }
-
-    :root {
-        --big-font: 5.5rem;
-        --p-font: 1rem;
-        transition: .2s;
-    }
-}
-
-@media(max-width: 1020px) {
-    .navbar a {
-        margin: 0 15px;
-    }
-
-    :root {
-        --big-font: 5rem;
-        --p-font: 1rem;
-        transition: .2s;
-    }
-}
-
-@media(max-width: 950px) {
-    .share {
-        display: none;
-    }
-
-    section {
-        padding: 70px 4%;
-    }
-
-    header {
-        padding: 11px 4%;
-        background: #2d2d2d;
-    }
-
-    .home {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .home-text {
-        order: 2;
-    }
-
-    .home-img {
-        margin: auto;
-        height: auto;
-        width: auto;
-    }
-
-    .home-img img {
-        max-width: 450px;
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media(max-width: 850px) {
-    .navbar {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        padding: 40px 50px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 100%;
-        display: flex;
-        flex-direction: column;
-        background: #2d2d2d;
-        transition: all 0.4s ease-in-out;
-    }
-
-    .navbar a {
-        display: block;
-        color: #c3c3c3;
-        padding: 0px;
-        margin: 0px 0px 40px 0px;
-        font-size: 2rem;
-        font-weight: 400;
-    }
-
-    .navbar.open {
-        left: 0;
-    }
-}
-
-@media(max-width: 500px) {
-    :root {
-        --big-font: 4rem;
-        --p-font: 15px;
-        transition: .2s;
-    }
-
-    .btn {
-        padding: 9px 28px;
-    }
 }
 
 .home-img img {
