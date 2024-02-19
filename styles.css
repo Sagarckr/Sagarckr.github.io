@@ -507,6 +507,14 @@ form .buttom3{
     cursor: pointer;
 }
 
+hr{
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 @media(max-width: 1850px) {
     header {
         padding: 15px 8%;
