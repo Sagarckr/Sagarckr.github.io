@@ -31,7 +31,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 32px 15%;
-    background: transparent;
+    background: #262626;
     transition: all ease .45s;
 }
 
