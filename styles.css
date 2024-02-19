@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,21 +7,22 @@
     text-decoration: none;
 }
 
-:root{
+:root {
     --bg-color: #1f1f21;
-    --text-color:#fff;
+    --text-color: #fff;
     --main-color: #ffae00;
-    --big-font:7rem;
+    --big-font: 7rem;
     --p-font: 1.1rem;
 }
 
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
 }
-header{
-    position:fixed;
+
+header {
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
@@ -34,21 +35,21 @@ header{
     transition: all ease .45s;
 }
 
-.logo{
+.logo {
     color: var(--text-color);
     font-size: 41px;
     font-weight: 600;
 }
 
-.logo span{
+.logo span {
     color: var(--main-color);
 }
 
-.navbar{
+.navbar {
     display: flex;
 }
 
-.navbar a{
+.navbar a {
     font-size: var(--p-font);
     font-weight: 500;
     color: var(--text-color);
@@ -56,17 +57,17 @@ header{
     transition: all ease .50s;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: var(--main-color);
 }
 
-.navbar a.active{
+.navbar a.active {
     color: var(--main-color);
 }
 
-.menu-btn{
-    background: linear-gradient(130.08deg,#383528 0%, #191919 100%);
-    box-shadow:0px 20px 40px #00000070;
+.menu-btn {
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
     border: 1px solid #3b3b3b;
     padding: 10px 20px;
     border-radius: 100px;
@@ -75,17 +76,17 @@ header{
     cursor: pointer;
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 28px;
     margin-left: 10px;
     z-index: 6;
 }
 
-section{
+section {
     padding: 0 15%;
 }
 
-.home{
+.home {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -95,21 +96,21 @@ section{
     gap: 30px;
 }
 
-.home-img{
+.home-img {
     width: 900px;
     height: 800px;
 }
 
-.home-img img{
+.home-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.home-text span{
+.home-text span {
     padding: 5px 25px;
-    background: linear-gradient(130.08deg,#383528 0%, #191919 100);
-    box-shadow:0px 20px 40px #00000070;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100);
+    box-shadow: 0px 20px 40px #00000070;
     border: 1px solid #3b3b3b;
     border-radius: 100px;
     color: var(--text-color);
@@ -118,12 +119,12 @@ section{
     text-transform: uppercase;
 }
 
-.home-text h1{
+.home-text h1 {
     font-size: var(--big-font);
     margin: 23px 0;
 }
 
-.home-text p{
+.home-text p {
     font-size: var(--p-font);
     font-weight: 400;
     color: #c3c3c3;
@@ -131,7 +132,7 @@ section{
     margin-bottom: 30px;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 14px 34px;
     background: var(--main-color);
@@ -143,26 +144,26 @@ section{
     transition: all 0.6s ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
     transform: translate(-5px);
     background: transparent;
     color: var(--main-color);
 }
 
-.two{
+.two {
     background: #141414;
-    border:2px solid #141414;
+    border: 2px solid #141414;
     color: var(--text-color);
     margin-left: 25px;
 }
 
-.two:hover{
+.two:hover {
     color: #141414;
     background: var(--text-color);
     border: 2px solid var(--text-color);
 }
 
-.share{
+.share {
     position: absolute;
     bottom: 3rem;
     left: 15%;
@@ -170,20 +171,20 @@ section{
     align-items: center;
 }
 
-.share p{
+.share p {
     font-size: 17px;
     color: var(--text-color);
     margin-right: 25px;
 }
 
-.social i{
+.social i {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 45px;
     width: 45px;
-    background: linear-gradient(130.08deg,#383528 0%, #191919 100);
-    box-shadow:0px 20px 40px #00000070;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100);
+    box-shadow: 0px 20px 40px #00000070;
     border: 1px solid #3b3b3b;
     border-radius: 50%;
     color: var(--text-color);
@@ -192,48 +193,50 @@ section{
     transition: all 0.6s ease-in-out;
 }
 
-.social i:hover{
+.social i:hover {
     transform: translateY(-10px);
+    color:#000;
+    background-color: white;
 }
 
 /* --------------About-------------*/
 
-#about{
+#about {
     padding: 50px 50px;
     color: var(--text-color);
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.about-col-1{
-    flex-basis:35%;
+.about-col-1 {
+    flex-basis: 35%;
 }
 
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
 
-.about-col-2{
+.about-col-2 {
     flex-basis: 60%;
 }
 
-.sub-title{
+.sub-title {
     font-size: 60px;
     font-weight: 600;
     color: var(--main-color);
 }
 
-.tab-titles{
+.tab-titles {
     display: flex;
     margin: 20px 0 40px;
 }
 
-.tab-links{
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -241,8 +244,8 @@ section{
     position: relative;
 }
 
-.tab-links::after{
-    content:'';
+.tab-links::after {
+    content: '';
     width: 0;
     height: 3px;
     background: #ffae00;
@@ -252,31 +255,31 @@ section{
     transition: 0.5s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li span {
     color: #ffae00;
     font-size: 14px;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
 /*------------Services------------*/
 
-#service{
+#service {
     padding: 50px 50px;
 }
 
@@ -287,7 +290,7 @@ section{
     margin-top: 50px;
 }
 
-.service-list div{
+.service-list div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
@@ -296,18 +299,18 @@ section{
     transition: background 0.5s, transform 0.5s;
 }
 
-.service-list div i{
+.service-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.service-list div h2{
+.service-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.service-list div a{
+.service-list div a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -315,100 +318,287 @@ section{
     display: inline-block;
 }
 
-.service-list div:hover{
+.service-list div:hover {
     color: #000;
     background: #fff;
     transform: translateY(-10px);
 }
+
 .service-list div:hover a {
     color: #000;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.service-list div a:hover{
-    color:#ffae00;
+.service-list div a:hover {
+    color: #ffae00;
+    font-weight: bold;
 }
 
-@media(max-width: 1850px){
-    header{
+#portfolio {
+    padding: 50px 50px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgb(0,0,0,0.6),#ff0000);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.buttom{
+    display:block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ffae00;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.buttom:hover{
+    background: #ffae00;
+    color: black;
+}
+
+/*------------Contact------------*/
+
+#contact{
+    padding: 50px 50px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis:60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #fff;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 20px;
+    margin: 0 7px;
+    transition: all 0.6s ease-in-out;
+}
+
+.social-icons i:hover{
+    transform: translateY(-10px);
+    color:#000;
+    background-color: white;
+}
+
+.buttom.buttom2{
+    display: inline-block;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.buttom.buttom3{
+    display: inline-block;
+    background: none;
+}
+
+.buttom.buttom3:hover{
+    background: #ffae00;
+    color: #000;
+}
+
+form .buttom3{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media(max-width: 1850px) {
+    header {
         padding: 15px 8%;
         transition: .2s;
     }
-    section{
+
+    section {
         padding: 0 8%;
         transition: .2s;
     }
-    .share{
+
+    .share {
         left: 8%;
         transition: .2s;
     }
 }
 
-@media(max-width: 1370px){
-    header{
+@media(max-width: 1370px) {
+    header {
         padding: 15px 4%;
         transition: .2s;
     }
-    section{
+
+    section {
         padding: 0 4%;
         transition: .2s;
     }
-    .share{
+
+    .share {
         left: 4%;
         transition: .2s;
     }
-    :root{
+
+    :root {
         --big-font: 5.5rem;
-        --p-font:1rem;
+        --p-font: 1rem;
         transition: .2s;
     }
 }
 
-@media(max-width: 1020px){
-    .navbar a{
+@media(max-width: 1020px) {
+    .navbar a {
         margin: 0 15px;
     }
-    :root{
+
+    :root {
         --big-font: 5rem;
         --p-font: 1rem;
         transition: .2s;
     }
 }
 
-@media(max-width: 950px){
-    .share{
+@media(max-width: 950px) {
+    .share {
         display: none;
     }
-    section{
+
+    section {
         padding: 70px 4%;
     }
-    header{
+
+    header {
         padding: 11px 4%;
         background: #2d2d2d;
     }
-    .home{
+
+    .home {
         height: auto;
         display: flex;
         flex-wrap: wrap;
     }
-    .home-text{
+
+    .home-text {
         order: 2;
     }
-    .home-img{
+
+    .home-img {
         margin: auto;
         height: auto;
         width: auto;
     }
-    .home-img img{
+
+    .home-img img {
         max-width: 450px;
         width: 100%;
         height: auto;
     }
 }
 
-@media(max-width: 850px){
-    .navbar{
-        position:absolute;
+@media(max-width: 850px) {
+    .navbar {
+        position: absolute;
         width: 100%;
         height: 100vh;
         padding: 40px 50px;
@@ -421,7 +611,8 @@ section{
         background: #2d2d2d;
         transition: all 0.4s ease-in-out;
     }
-    .navbar a{
+
+    .navbar a {
         display: block;
         color: #c3c3c3;
         padding: 0px;
@@ -429,35 +620,39 @@ section{
         font-size: 2rem;
         font-weight: 400;
     }
-    .navbar.open{
+
+    .navbar.open {
         left: 0;
     }
 }
-@media(max-width: 500px){
-    :root{
+
+@media(max-width: 500px) {
+    :root {
         --big-font: 4rem;
         --p-font: 15px;
         transition: .2s;
     }
-    .btn{
+
+    .btn {
         padding: 9px 28px;
     }
 }
 
-.home-img img{
+.home-img img {
     animation: imgg 2s ease-in-out infinite;
     animation-delay: 2s;
 }
 
-@keyframes imgg{
-    0%{
+@keyframes imgg {
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-22px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
-
