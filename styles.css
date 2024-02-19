@@ -515,6 +515,14 @@ hr{
     margin-right: 50px;
 }
 
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+}
+
 @media(max-width: 1850px) {
     header {
         padding: 15px 8%;
