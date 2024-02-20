@@ -612,7 +612,7 @@ hr {
     .about-col-1 {
         flex-basis: 25%;
     }
-    
+
     .about-col-2 {
         flex-basis: 70%;
     }
@@ -623,20 +623,22 @@ hr {
 
     .work-list {
         grid-template-columns: repeat(2, minmax(250px, 1fr));
-        justify-items: center; /* Align items horizontally in the center */
+        justify-items: center;
+        /* Align items horizontally in the center */
     }
 
     .work-list div:nth-child(3) {
-        grid-column: 1 / -1; /* This spans the fourth item across all columns */
+        grid-column: 1 / -1;
+        /* This spans the fourth item across all columns */
     }
 }
 
-@media only screen and (max-width: 850px){
-    #contact .container .row{
+@media only screen and (max-width: 850px) {
+    #contact .container .row {
         display: block;
     }
 
-    #about .row{
+    #about .row {
         display: block;
     }
 
@@ -646,14 +648,10 @@ hr {
 }
 
 @media only screen and (max-width: 800px) {
-    /*
-    .home {
-        flex-direction: column-reverse;
-    }
-    */
+    
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
     .service-list {
         grid-template-columns: repeat(1, minmax(250px, 1fr));
     }
@@ -662,17 +660,26 @@ hr {
         grid-template-columns: repeat(1, minmax(250px, 1fr));
     }
 
-    .tab-links {
-        margin-right: 20px;
-    }
-
-    .work img{
+    .work img {
         height: 400px;
         width: 300px;
     }
 }
 
-@media only screen and (max-width: 800px){
-    
+@media only screen and (max-width: 600px) {
+    /* Hide the "Training" tab title */
+    .tab-titles .tab-links:nth-of-type(4) {
+        display: none;
+    }
+
+    /* Hide the "Training" tab content */
+    #training {
+        display: none;
+    }
 }
 
+@media only screen and (max-width: 400px) {
+    .tab-links {
+        margin-right: 20px;
+    }
+}
