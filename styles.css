@@ -648,7 +648,28 @@ hr {
 }
 
 @media only screen and (max-width: 800px) {
-    
+    .home-img {
+        display: none;
+        /* Hide the image for screens less than 800px */
+    }
+
+    .home-text {
+        margin-top: 50px;
+        /* Adjust margin-top */
+        text-align: center;
+        /* Center text */
+    }
+
+    .home-text h1 {
+        font-size: 3rem;
+        /* Decrease font size of heading */
+        margin-top: 20px;
+    }
+
+    .home-text span {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -664,9 +685,24 @@ hr {
         height: 400px;
         width: 300px;
     }
+
+    .share {
+        flex-direction: column;
+        /* Change flex-direction to column */
+        align-items: center;
+        /* Center items horizontally */
+        text-align: center;
+        /* Center text */
+    }
+
+    .social {
+        margin-top: 10px;
+        /* Add margin-top to separate from paragraph */
+    }
 }
 
 @media only screen and (max-width: 600px) {
+
     /* Hide the "Training" tab title */
     .tab-titles .tab-links:nth-of-type(4) {
         display: none;
@@ -675,6 +711,12 @@ hr {
     /* Hide the "Training" tab content */
     #training {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .btn {
+        padding: 10px 20px;
     }
 }
 
