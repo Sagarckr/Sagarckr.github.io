@@ -724,8 +724,24 @@ hr {
         padding: 20px;
     }
 
+    #about{
+        padding: 20px;
+    }
+
+    #service{
+        padding: 20px;
+    }
+
+    #portfolio{
+        padding: 20px;
+    }
+
+    #contact{
+        padding: 20px;
+    }
+
     hr{
-        margin-top: 10px;
+        margin: 20px;
     }
 }
 
