@@ -700,6 +700,30 @@ hr {
         margin-top: 10px;
         /* Add margin-top to separate from paragraph */
     }
+
+    section {
+        padding: 30px;
+    }
+
+    #about{
+        padding: 30px;
+    }
+
+    #service{
+        padding: 30px;
+    }
+
+    #portfolio{
+        padding: 30px;
+    }
+
+    #contact{
+        padding: 30px;
+    }
+
+    hr{
+        margin: 30px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -718,30 +742,6 @@ hr {
 @media only screen and (max-width: 450px) {
     .btn {
         padding: 10px 20px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    #about{
-        padding: 20px;
-    }
-
-    #service{
-        padding: 20px;
-    }
-
-    #portfolio{
-        padding: 20px;
-    }
-
-    #contact{
-        padding: 20px;
-    }
-
-    hr{
-        margin: 20px;
     }
 }
 
