@@ -83,7 +83,7 @@ header {
 }
 
 section {
-    padding: 50px 50px;
+    padding: 50px;
 }
 
 .home {
@@ -518,6 +518,7 @@ hr {
     height: 1.2px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 100px;
 }
 
 .copyright {
@@ -717,6 +718,14 @@ hr {
 @media only screen and (max-width: 450px) {
     .btn {
         padding: 10px 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    hr{
+        margin-top: 10px;
     }
 }
 
