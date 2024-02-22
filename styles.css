@@ -782,7 +782,6 @@ hr {
     }
 
     section {
-        margin-top: 30px;
         padding: 20px;
     }
 
@@ -804,12 +803,5 @@ hr {
 
     hr{
         margin: 20px;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    section {
-        margin-top: 30px;
-        padding: 20px;
     }
 }
