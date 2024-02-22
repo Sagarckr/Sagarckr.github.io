@@ -728,6 +728,10 @@ hr {
         /* Add margin-top to separate from paragraph */
     }
 
+    header {
+        padding: 5px 30px;    
+    }
+
     section {
         padding: 30px;
     }
@@ -773,7 +777,39 @@ hr {
 }
 
 @media only screen and (max-width: 400px) {
-    .tab-links {
-        margin-right: 20px;
+    header {
+        padding: 5px 20px;    
+    }
+
+    section {
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    #about{
+        padding: 20px;
+    }
+
+    #service{
+        padding: 20px;
+    }
+
+    #portfolio{
+        padding: 20px;
+    }
+
+    #contact{
+        padding: 20px;
+    }
+
+    hr{
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    section {
+        margin-top: 30px;
+        padding: 20px;
     }
 }
