@@ -252,7 +252,7 @@ section {
 .tab-contents.active-tab {
   display: block;
 }
-/------------Services------------/ #service {
+/* ------------Services------------*/ #service {
   padding: 50px 50px;
 }
 .service-list {
@@ -377,7 +377,8 @@ section {
   background: #ffae00;
   color: black;
 }
-/------------Contact------------/ #contact {
+/* ------------Contact------------*/ 
+#contact {
   padding: 50px 50px;
 }
 .contact-left {
