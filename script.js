@@ -44,61 +44,21 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-// Contact Form Submission
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    const formData = new FormData(this);
-    const statusDiv = document.getElementById('formStatus');
-    const submitBtn = this.querySelector('button[type="submit"]');
-    
-    // Disable button and show loading state
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending...';
-    statusDiv.textContent = '';
-    statusDiv.className = '';
-    
-    try {
-        const response = await fetch('/send-email', {
-            method: 'POST',
-            body: formData
-        });
-        
-        const data = await response.json();
-        
-        if (data.success) {
-            statusDiv.innerHTML = `
+// Contact Form - Show success message on redirect
+window.addEventListener('load', function() {
+    if (window.location.hash === '#contact') {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success')) {
+            document.getElementById('formStatus').innerHTML = `
                 <p class="success-message">
                     <i class="fa-solid fa-circle-check"></i> 
-                    ${data.message}
+                    Thank you! Your message has been sent successfully. I'll get back to you soon.
                 </p>
             `;
-            this.reset();
-            
-            // Auto-hide success message after 5 seconds
             setTimeout(() => {
-                statusDiv.innerHTML = '';
+                document.getElementById('formStatus').innerHTML = '';
             }, 5000);
-        } else {
-            statusDiv.innerHTML = `
-                <p class="error-message">
-                    <i class="fa-solid fa-circle-xmark"></i> 
-                    Failed to send message. Please try again or email me directly.
-                </p>
-            `;
         }
-    } catch (error) {
-        console.error('Form submission error:', error);
-        statusDiv.innerHTML = `
-            <p class="error-message">
-                <i class="fa-solid fa-circle-xmark"></i> 
-                Connection error. Please email me directly at 
-                <a href="mailto:sagarsharma9821315721@gmail.com">sagarsharma9821315721@gmail.com</a>
-            </p>
-        `;
-    } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
     }
 });
 

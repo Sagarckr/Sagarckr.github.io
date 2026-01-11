@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagar Upadhyaya - Data Analyst & Python Developer</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +33,7 @@
             <h1>Sagar Upadhyaya</h1>
             <p>Passionate about building efficient solutions and uncovering insights from complex datasets. Transforming raw data into meaningful stories that drive innovation and real-world impact.</p>
             <div class="main-btn">
-                <a href="{{ url_for('static', filename='Sagar_Upadhyaya_CV.pdf') }}" download class="btn">Download CV</a>
+                <a href="Sagar_Upadhyaya_CV.pdf" download class="btn">Download CV</a>
                 <a href="#contact" class="btn two">Hire Me</a>
             </div>
             <div class="share">
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="home-img">
-            <img src="{{ url_for('static', filename='images/sagar.png') }}" alt="Sagar Upadhyaya">
+            <img src="images/sagar.png" alt="Sagar Upadhyaya">
         </div>
     </section>
 
@@ -57,7 +57,7 @@
     <div id="about">
         <div class="row">
             <div class="about-col-1">
-                <img src="{{ url_for('static', filename='images/sagar2.JPG') }}" alt="About Sagar">
+                <img src="images/sagar2.JPG" alt="About Sagar">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -157,7 +157,7 @@
             <h1 class="sub-title">Featured Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="{{ url_for('static', filename='images/work1.jpg') }}" alt="Match Master Project">
+                    <img src="images/work1.jpg" alt="Match Master Project">
                     <div class="layer">
                         <h3>Match Master</h3>
                         <p>IPL score and win probability prediction system using machine learning. Built with Python and scikit-learn, achieving high accuracy in match outcome predictions.</p>
@@ -165,7 +165,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="{{ url_for('static', filename='images/work2.jpg') }}" alt="Mano Matrix Project">
+                    <img src="images/work2.jpg" alt="Mano Matrix Project">
                     <div class="layer">
                         <h3>Mano Matrix</h3>
                         <p>Computer vision system enabling intuitive control through hand gestures. Developed using Python, OpenCV, and MediaPipe for real-time gesture recognition.</p>
@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="{{ url_for('static', filename='images/work3.jpg') }}" alt="Cinema Hub Project">
+                    <img src="images/work3.jpg" alt="Cinema Hub Project">
                     <div class="layer">
                         <h3>Cinema Hub</h3>
                         <p>Movie ticket booking system built with C++. Features seat selection, booking management, and transaction records for cinema operations.</p>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <div class="work work-special">
-                    <img src="{{ url_for('static', filename='images/work4.jpg') }}" alt="Ghar Sewa Project">
+                    <img src="images/work4.jpg" alt="Ghar Sewa Project">
                     <div class="layer">
                         <h3>Ghar Sewa</h3>
                         <p>Web platform connecting job seekers with employment opportunities and enabling job providers to announce staffing needs efficiently. Full-stack web application.</p>
@@ -210,13 +210,15 @@
                         <a href="https://www.instagram.com/sagar_ckr17/" target="_blank"><i class='bx bxl-instagram'></i></a>
                         <a href="https://github.com/Sagarckr" target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
-                    <a href="{{ url_for('static', filename='Sagar_Upadhyaya_CV.pdf') }}" download class="buttom buttom2">Download CV</a>
+                    <a href="Sagar_Upadhyaya_CV.pdf" download class="buttom buttom2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form id="contactForm">
+                    <form action="https://formspree.io/f/mvzzpnle" method="POST" id="contactForm">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <input type="text" name="subject" placeholder="Subject" required>
+                        <input type="hidden" name="_subject" value="New Portfolio Contact">
+                        <input type="hidden" name="_next" value="https://sagarckr.github.io/#contact">
                         <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="buttom buttom3">Send Message</button>
                         <div id="formStatus"></div>
@@ -231,6 +233,6 @@
     </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="script.js"></script>
 </body>
 </html>
