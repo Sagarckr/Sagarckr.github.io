@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagar Upadhyaya - Data Analyst & Python Developer</title>
+    <meta name="description" content="Passionate Data Analyst and Python Developer specializing in machine learning, data visualization, and automation.">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,10 +13,11 @@
     <script src="https://kit.fontawesome.com/2042e0adf1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <a href="#" class="logo"><span>S</span>agar</a>
         <ul class="navbar">
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#service">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -27,210 +29,490 @@
         </div>
     </header>
 
-    <section class="home">
+    <!-- Home Section -->
+    <section class="home" id="home">
         <div class="home-text">
-            <span>Data Analyst & Python Developer</span>
+            <span class="badge">Data Analyst & Python Developer</span>
             <h1>Sagar Upadhyaya</h1>
-            <p>Passionate about building efficient solutions and uncovering insights from complex datasets. Transforming raw data into meaningful stories that drive innovation and real-world impact.</p>
+            <p class="home-description">Passionate about building efficient solutions and uncovering insights from complex datasets. Transforming raw data into meaningful stories that drive innovation and real-world impact.</p>
             <div class="main-btn">
-                <a href="Sagar_Upadhyaya_CV.pdf" download class="btn">Download CV</a>
-                <a href="#contact" class="btn two">Hire Me</a>
+                <a href="Sagar_Upadhyaya_CV.pdf" download class="btn btn-primary">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fa-solid fa-paper-plane"></i> Hire Me
+                </a>
             </div>
             <div class="share">
                 <p>Connect with me:</p>
                 <div class="social">
-                    <a href="https://www.facebook.com/Sagarckr17" target="_blank"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://twitter.com/Sagar_ckr17" target="_blank"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.linkedin.com/in/sagarckr/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/sagar_ckr17/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://github.com/Sagarckr" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.facebook.com/Sagarckr17" target="_blank" aria-label="Facebook">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://twitter.com/Sagar_ckr17" target="_blank" aria-label="Twitter">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sagarckr/" target="_blank" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://www.instagram.com/sagar_ckr17/" target="_blank" aria-label="Instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://github.com/Sagarckr" target="_blank" aria-label="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="home-img">
-            <img src="images/sagar.png" alt="Sagar Upadhyaya">
+            <div class="img-container">
+                <img src="images/sagar.png" alt="Sagar Upadhyaya" loading="lazy">
+                <div class="img-background"></div>
+            </div>
         </div>
     </section>
 
-    <hr>
+    <!-- Divider -->
+    <div class="section-divider"></div>
 
-    <div id="about">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/sagar2.JPG" alt="About Sagar">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I am a passionate Data Analyst and Python Developer with a deep interest in building efficient, scalable solutions and uncovering insights from complex datasets. As a BIT graduate and college topper from Kantipur City College, I bring strong skills in backend development, automation, data processing, machine learning, statistical analysis, and data visualization. I'm enthusiastic about writing clean, optimized code and transforming raw data into meaningful stories that drive innovation and real-world impact.</p><br>
-                
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('awards')">Awards</p>
-                </div>
-                
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Programming & Tools</span><br>Python, R Programming, SQL, Excel, IBM SPSS, R Studio, Power BI, Streamlit</li>
-                        <li><span>Analysis & Visualization</span><br>Data cleaning, statistical analysis, dashboards, reports and automation</li>
-                        <li><span>Soft Skills</span><br>Problem-solving, attention to detail, communication, collaboration, time management</li>
-                        <li><span>Web Technologies</span><br>HTML, CSS, JavaScript, PHP - for building data-driven web applications</li>
-                    </ul>
-                </div>
-                
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Data Analyst | Codavatar (KrispCall)</span><br>September 2024 - December 2024<br>Analyzed revenue, lead, and deal data; automated workflows; developed data-driven applications for sales and marketing teams</li>
-                        <li><span>Data Analyst | Smart Choice Technologies Ltd</span><br>June 2024 - August 2024<br>Analyzed UPI transaction data; created interactive dashboards; automated reporting with Python and Streamlit</li>
-                        <li><span>Odoo Developer Intern | Vacker 360</span><br>April 2024 - June 2024<br>Developed and customized Odoo modules for business process automation</li>
-                        <li><span>Data Analyst Intern | PB Group</span><br>January 2024 - March 2024<br>Conducted research-based analysis; designed questionnaires; prepared analytical reports</li>
-                    </ul>
-                </div>
-                
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Bachelor of Information Technology (BIT)</span><br>Kantipur City College (KCC), Kathmandu | 2020 - 2024<br>College Topper - 2020 Batch</li>
-                        <li><span>XII (NEB) - Management (Computer)</span><br>Kathmandu Model College (KMC), Kathmandu | 2018 - 2020</li>
-                        <li><span>SEE (School Leaving Certificate)</span><br>Future Brighter Secondary School, Baglung | 2007 - 2018</li>
-                    </ul>
-                </div>
-                
-                <div class="tab-contents" id="awards">
-                    <ul>
-                        <li><span>🏆 College Topper (BIT - 2020 Batch)</span><br>Kantipur City College (KCC), Kathmandu, Nepal</li>
-                        <li><span>🏆 Coding & Speech Competition Winner</span><br>Kantipur City College (KCC), Kathmandu, Nepal</li>
-                        <li><span>👥 Leadership & Community</span><br>Led IT club; conducted workshops on Git, GitHub & other technologies</li>
-                        <li><span>🎨 Creative Work</span><br>Freelance Video Editor / Graphics Designer</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-
-    <div id="service">
-        <h1 class="sub-title">My Services</h1>
-        <div class="service-list">
-            <div>
-                <i class="fa-solid fa-chart-line"></i>
-                <h2>Data Analysis</h2>
-                <p>Expert analysis of complex datasets using Python, R, SQL, and Power BI. I transform raw data into actionable insights through statistical analysis, trend identification, and comprehensive reporting.</p>
-                <a href="#contact">Get Started</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-chart-bar"></i>
-                <h2>Data Visualization</h2>
-                <p>Creating interactive dashboards and compelling visualizations using Power BI, Python libraries, and Streamlit. Making complex data easy to understand and act upon.</p>
-                <a href="#contact">Get Started</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-robot"></i>
-                <h2>Automation & ML</h2>
-                <p>Automating repetitive tasks and building machine learning models for prediction and classification. Streamlining workflows to save time and increase efficiency.</p>
-                <a href="#contact">Get Started</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Python Development</h2>
-                <p>Developing scalable backend solutions, data processing pipelines, and custom applications using Python. Clean, efficient, and well-documented code is my standard.</p>
-                <a href="#contact">Get Started</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-laptop-code"></i>
-                <h2>Web Development</h2>
-                <p>Building dynamic and responsive websites using modern web technologies. Creating user-friendly interfaces that deliver seamless experiences across all devices.</p>
-                <a href="#contact">Get Started</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-graduation-cap"></i>
-                <h2>Training & Workshops</h2>
-                <p>Conducting workshops and training sessions on data analysis, Python programming, Git/GitHub, and various technologies. Sharing knowledge to empower others.</p>
-                <a href="#contact">Get Started</a>
-            </div>
-        </div>
-    </div>
-    <hr>
-
-    <div id="portfolio">
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
-            <h1 class="sub-title">Featured Projects</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="about-img-wrapper">
+                        <img src="images/sagar2.JPG" alt="About Sagar" loading="lazy">
+                        <div class="about-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-description">I am a passionate Data Analyst and Python Developer with a deep interest in building efficient, scalable solutions and uncovering insights from complex datasets. As a <strong>BIT graduate and college topper</strong> from Kantipur City College, I bring strong skills in backend development, automation, data processing, machine learning, statistical analysis, and data visualization.</p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-box">
+                            <h3>4+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>🏆</h3>
+                            <p>College Topper</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            <i class="fa-solid fa-code"></i> Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            <i class="fa-solid fa-briefcase"></i> Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            <i class="fa-solid fa-graduation-cap"></i> Education
+                        </p>
+                        <p class="tab-links" onclick="opentab('awards')">
+                            <i class="fa-solid fa-trophy"></i> Awards
+                        </p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4><i class="fa-solid fa-laptop-code"></i> Programming & Tools</h4>
+                                <div class="skill-tags">
+                                    <span>Python</span>
+                                    <span>R Programming</span>
+                                    <span>SQL</span>
+                                    <span>Excel</span>
+                                    <span>IBM SPSS</span>
+                                    <span>Power BI</span>
+                                    <span>Streamlit</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fa-solid fa-chart-line"></i> Analysis & Visualization</h4>
+                                <div class="skill-tags">
+                                    <span>Data Cleaning</span>
+                                    <span>Statistical Analysis</span>
+                                    <span>Dashboards</span>
+                                    <span>Reporting</span>
+                                    <span>Automation</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fa-solid fa-people-group"></i> Soft Skills</h4>
+                                <div class="skill-tags">
+                                    <span>Problem-solving</span>
+                                    <span>Attention to Detail</span>
+                                    <span>Communication</span>
+                                    <span>Collaboration</span>
+                                    <span>Time Management</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Sep 2024 - Dec 2024</span>
+                                    <h4>Data Analyst | Codavatar (KrispCall)</h4>
+                                    <p>Analyzed revenue, lead, and deal data; automated workflows; developed data-driven applications for sales and marketing teams</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Jun 2024 - Aug 2024</span>
+                                    <h4>Data Analyst | Smart Choice Technologies Ltd</h4>
+                                    <p>Analyzed UPI transaction data; created interactive dashboards; automated reporting with Python and Streamlit</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Apr 2024 - Jun 2024</span>
+                                    <h4>Odoo Developer Intern | Vacker 360</h4>
+                                    <p>Developed and customized Odoo modules for business process automation</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Jan 2024 - Mar 2024</span>
+                                    <h4>Data Analyst Intern | PB Group</h4>
+                                    <p>Conducted research-based analysis; designed questionnaires; prepared analytical reports</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <div class="education-list">
+                            <div class="education-item">
+                                <i class="fa-solid fa-graduation-cap edu-icon"></i>
+                                <div class="edu-details">
+                                    <h4>Bachelor of Information Technology (BIT)</h4>
+                                    <p class="edu-school">Kantipur City College (KCC), Kathmandu</p>
+                                    <p class="edu-year">2020 - 2024</p>
+                                    <span class="edu-badge">🏆 College Topper - 2020 Batch</span>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <i class="fa-solid fa-school edu-icon"></i>
+                                <div class="edu-details">
+                                    <h4>XII (NEB) - Management (Computer)</h4>
+                                    <p class="edu-school">Kathmandu Model College (KMC), Kathmandu</p>
+                                    <p class="edu-year">2018 - 2020</p>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <i class="fa-solid fa-book edu-icon"></i>
+                                <div class="edu-details">
+                                    <h4>SEE (School Leaving Certificate)</h4>
+                                    <p class="edu-school">Future Brighter Secondary School, Baglung</p>
+                                    <p class="edu-year">2007 - 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-contents" id="awards">
+                        <div class="awards-grid">
+                            <div class="award-card">
+                                <i class="fa-solid fa-trophy award-icon"></i>
+                                <h4>College Topper</h4>
+                                <p>BIT - 2020 Batch</p>
+                                <span class="award-location">Kantipur City College, Kathmandu</span>
+                            </div>
+                            <div class="award-card">
+                                <i class="fa-solid fa-medal award-icon"></i>
+                                <h4>Coding & Speech Competition Winner</h4>
+                                <p>Inter-college Competition</p>
+                                <span class="award-location">Kantipur City College, Kathmandu</span>
+                            </div>
+                            <div class="award-card">
+                                <i class="fa-solid fa-users award-icon"></i>
+                                <h4>IT Club Leader</h4>
+                                <p>Leadership & Community</p>
+                                <span class="award-location">Conducted workshops on Git, GitHub & Technologies</span>
+                            </div>
+                            <div class="award-card">
+                                <i class="fa-solid fa-palette award-icon"></i>
+                                <h4>Creative Professional</h4>
+                                <p>Freelance Work</p>
+                                <span class="award-location">Video Editor / Graphics Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Services Section -->
+    <section id="service">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="sub-title">My Services</h1>
+                <p class="section-subtitle">Transforming data into actionable insights and building scalable solutions</p>
+            </div>
+            <div class="service-list">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h2>Data Analysis</h2>
+                    <p>Expert analysis of complex datasets using Python, R, SQL, and Power BI. I transform raw data into actionable insights through statistical analysis, trend identification, and comprehensive reporting.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-bar"></i>
+                    </div>
+                    <h2>Data Visualization</h2>
+                    <p>Creating interactive dashboards and compelling visualizations using Power BI, Python libraries, and Streamlit. Making complex data easy to understand and act upon.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h2>Automation & ML</h2>
+                    <p>Automating repetitive tasks and building machine learning models for prediction and classification. Streamlining workflows to save time and increase efficiency.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h2>Python Development</h2>
+                    <p>Developing scalable backend solutions, data processing pipelines, and custom applications using Python. Clean, efficient, and well-documented code is my standard.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h2>Web Development</h2>
+                    <p>Building dynamic and responsive websites using modern web technologies. Creating user-friendly interfaces that deliver seamless experiences across all devices.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h2>Training & Workshops</h2>
+                    <p>Conducting workshops and training sessions on data analysis, Python programming, Git/GitHub, and various technologies. Sharing knowledge to empower others.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="sub-title">Featured Projects</h1>
+                <p class="section-subtitle">Showcasing my best work in data analysis and software development</p>
+            </div>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work1.jpg" alt="Match Master Project">
+                    <div class="work-img-wrapper">
+                        <img src="images/work1.jpg" alt="Match Master Project" loading="lazy">
+                        <div class="work-overlay"></div>
+                    </div>
                     <div class="layer">
-                        <h3>Match Master</h3>
-                        <p>IPL score and win probability prediction system using machine learning. Built with Python and scikit-learn, achieving high accuracy in match outcome predictions.</p>
-                        <a href="https://github.com/Sagarckr/Match-Master" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <div class="layer-content">
+                            <h3>Match Master</h3>
+                            <p>IPL score and win probability prediction system using machine learning. Built with Python and scikit-learn, achieving high accuracy in match outcome predictions.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>ML</span>
+                                <span>scikit-learn</span>
+                            </div>
+                            <a href="https://github.com/Sagarckr/Match-Master" target="_blank" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work2.jpg" alt="Mano Matrix Project">
+                    <div class="work-img-wrapper">
+                        <img src="images/work2.jpg" alt="Mano Matrix Project" loading="lazy">
+                        <div class="work-overlay"></div>
+                    </div>
                     <div class="layer">
-                        <h3>Mano Matrix</h3>
-                        <p>Computer vision system enabling intuitive control through hand gestures. Developed using Python, OpenCV, and MediaPipe for real-time gesture recognition.</p>
-                        <a href="https://github.com/Sagarckr/Mano-Matrix" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <div class="layer-content">
+                            <h3>Mano Matrix</h3>
+                            <p>Computer vision system enabling intuitive control through hand gestures. Developed using Python, OpenCV, and MediaPipe for real-time gesture recognition.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>MediaPipe</span>
+                            </div>
+                            <a href="https://github.com/Sagarckr/Mano-Matrix" target="_blank" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work3.jpg" alt="Cinema Hub Project">
+                    <div class="work-img-wrapper">
+                        <img src="images/work3.jpg" alt="Cinema Hub Project" loading="lazy">
+                        <div class="work-overlay"></div>
+                    </div>
                     <div class="layer">
-                        <h3>Cinema Hub</h3>
-                        <p>Movie ticket booking system built with C++. Features seat selection, booking management, and transaction records for cinema operations.</p>
-                        <a href="https://github.com/Sagarckr/Cinema-Hub" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <div class="layer-content">
+                            <h3>Cinema Hub</h3>
+                            <p>Movie ticket booking system built with C++. Features seat selection, booking management, and transaction records for cinema operations.</p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                                <span>Desktop App</span>
+                                <span>OOP</span>
+                            </div>
+                            <a href="https://github.com/Sagarckr/Cinema-Hub" target="_blank" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="work work-special">
-                    <img src="images/work4.jpg" alt="Ghar Sewa Project">
+                    <div class="work-img-wrapper">
+                        <img src="images/work4.jpg" alt="Ghar Sewa Project" loading="lazy">
+                        <div class="work-overlay"></div>
+                    </div>
                     <div class="layer">
-                        <h3>Ghar Sewa</h3>
-                        <p>Web platform connecting job seekers with employment opportunities and enabling job providers to announce staffing needs efficiently. Full-stack web application.</p>
-                        <a href="https://github.com/Sagarckr/Ghar-Sewa" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <div class="layer-content">
+                            <h3>Ghar Sewa</h3>
+                            <p>Web platform connecting job seekers with employment opportunities and enabling job providers to announce staffing needs efficiently. Full-stack web application.</p>
+                            <div class="project-tags">
+                                <span>Full-Stack</span>
+                                <span>Web App</span>
+                                <span>PHP</span>
+                            </div>
+                            <a href="https://github.com/Sagarckr/Ghar-Sewa" target="_blank" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/Sagarckr" target="_blank" class="buttom">View All Projects on GitHub</a>
+            <div class="portfolio-cta">
+                <a href="https://github.com/Sagarckr" target="_blank" class="buttom">
+                    <i class="fa-brands fa-github"></i> View All Projects on GitHub
+                </a>
+            </div>
         </div>
-    </div>
-    <hr>
+    </section>
 
-    <div id="contact">
+    <!-- Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
+            <div class="section-header">
+                <h1 class="sub-title">Let's Work Together</h1>
+                <p class="section-subtitle">Have a project in mind? Let's discuss how I can help</p>
+            </div>
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Let's Work Together</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> sagarsharma9821315721@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone-flip"></i> +977 9849956588</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Sitapaila, Kathmandu, Nepal</p>
-                    <p>Connect with me:</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/Sagarckr17" target="_blank"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://twitter.com/Sagar_ckr17" target="_blank"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://www.linkedin.com/in/sagarckr/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://www.instagram.com/sagar_ckr17/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                        <a href="https://github.com/Sagarckr" target="_blank"><i class='bx bxl-github'></i></a>
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>sagarsharma9821315721@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+977 9849956588</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Sitapaila, Kathmandu, Nepal</p>
+                            </div>
+                        </div>
                     </div>
-                    <a href="Sagar_Upadhyaya_CV.pdf" download class="buttom buttom2">Download CV</a>
+                    
+                    <div class="social-connect">
+                        <h3>Connect with me</h3>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/Sagarckr17" target="_blank" aria-label="Facebook">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="https://twitter.com/Sagar_ckr17" target="_blank" aria-label="Twitter">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sagarckr/" target="_blank" aria-label="LinkedIn">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                            <a href="https://www.instagram.com/sagar_ckr17/" target="_blank" aria-label="Instagram">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                            <a href="https://github.com/Sagarckr" target="_blank" aria-label="GitHub">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <a href="Sagar_Upadhyaya_CV.pdf" download class="buttom buttom2">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
                 </div>
                 <div class="contact-right">
-                    <form action="https://formspree.io/f/mvzzpnle" method="POST" id="contactForm">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="text" name="subject" placeholder="Subject" required>
+                    <form action="https://formspree.io/f/xnnqanvp" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
                         <input type="hidden" name="_subject" value="New Portfolio Contact">
                         <input type="hidden" name="_next" value="https://sagarckr.github.io/#contact">
-                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="buttom buttom3">Send Message</button>
+                        <div class="form-group">
+                            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="buttom buttom3">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
                         <div id="formStatus"></div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="copyright">
-        <p>Copyright <i class="fa-solid fa-copyright"></i> 2024 Sagar Upadhyaya. All rights reserved.</p>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Sagar Upadhyaya. All rights reserved.</p>
+            <p>Made with <i class="fa-solid fa-heart"></i> in Nepal</p>
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
